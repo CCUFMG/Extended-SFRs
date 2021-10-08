@@ -1,0 +1,34 @@
+= Shared Extended SFRs
+
+== Introduction
+This is a repository focused on sharing the Extended Components Definitions for extended SFRs created by TCs. The goal is to provide a single place for everyone to see what other TCs are doing and to collaborate on new SFRs to promote consistency where possible, and easier work where not.
+
+== Code of Conduct
+The CCUF expects participants to follow a code of conduct. This is laid out in the link:code_of_conduct.adoc[Code of Conduct].
+
+== How to Use this Repository
+This repository is not intended for actual documents (or code), and is instead focused on using https://github.com/CCUFMG/Extended-SFRs/issues[Issues] to record new SFRs for review. 
+
+Since in many cases a component family will have more than one new SFR, the entire family should be added in a single Issue instead of creating a new Issue for each SFR within the family.
+
+=== Labels
+Several labels have been created to help classify the new components as well as who is using them. More can be added by reaching out to the CCUF MG.
+
+The first set of labels is to mark the component family, such as FAU for Security Audit. One has been created for all the existing families in v3.1R5 Part 2. 
+
+The second set of labels is to mark the use of the family. These are all marked in a different color than the component families. The purpose of this set is to see what groups may be using any particular set of components, which can be used by the CCDB and ISO to potentially determine they shuold be incorporated into future versions of the CC. These labels should be added both by the group submitting the family and any future group using them.
+
+=== Creating a New Component Family
+While many of the iTCs are now using asciidoc formatting for the cPPs, Issues do not have the ability to display this formatting (Issues can only use the simple Markdown). As such, the specific formatting for the information does not need to follow any specific asciidoc formatting requirements.
+
+The following steps should be used though to provide consistency in what is entered:
+
+. The title should have the SFR shortname and the title for the family
+. The full text of all the ECD should be provided in the Issue (please use bold and italics to mark the selections/assignments)
+. Add labels to the Issue marking the SFR family and the iTC that is using it (or submitted it)
+. An immediate comment (so the first one) should be created immediately after to contain the http://ditaa.sourceforge.net/[ditaa] diagram of the family
+
+(A great tool to help build the ditaa diagram is http://www.jave.de/[JavE] which lets you make drawings in text.)
+
+== Questions About Requirements
+After the first comment (which should be the diagram), anyone should be able to ask questions or make comments about the requirements. For anyone who provides a new component, it is asked that they provide responses to further the ongoing use of the new requirements.
